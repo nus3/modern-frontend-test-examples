@@ -1,5 +1,5 @@
 {
-  "name": "jest-ts",
+  "name": "jest-examples",
   "version": "1.0.0",
   "scripts": {
     "test": "npm run test:babel && npm run test:ts-jest && npm run test:swc",
