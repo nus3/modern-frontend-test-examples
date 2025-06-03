@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { userEvent, within, fn, waitFor, expect } from '@storybook/test';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { userEvent, within, fn, waitFor, expect } from 'storybook/test';
 import { Form } from './Form';
 
 const meta = {
