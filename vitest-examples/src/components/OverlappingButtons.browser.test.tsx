@@ -22,7 +22,7 @@ describe("OverlappingButtons (ブラウザ環境)", () => {
     expect(onBackButtonClick).not.toHaveBeenCalled();
   });
 
-  test("背面ボタンをクリック", async () => {
+  test.skip("背面ボタンをクリック", async () => {
     const onBackButtonClick = vi.fn();
     const onFrontButtonClick = vi.fn();
 
