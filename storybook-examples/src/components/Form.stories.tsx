@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { userEvent, within, fn, waitFor, expect } from 'storybook/test';
+import { userEvent, fn, waitFor, expect } from 'storybook/test';
 import { Form } from './Form';
 
 const meta = {
@@ -27,9 +27,7 @@ export const SubmitInteraction: Story = {
   args: {
     onSubmit: fn(),
   },
-  play: async ({ canvasElement, step, args }) => {
-    const canvas = within(canvasElement);
-
+  play: async ({ canvas, step, args }) => {
     await step('名前フィールドに名前を入力', async () => {
       await userEvent.type(canvas.getByRole("textbox", { name: "Name" }), 'nus3');
     });
