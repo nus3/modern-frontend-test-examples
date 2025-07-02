@@ -1,0 +1,33 @@
+{
+  "name": "jest-examples",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npm run test:babel && npm run test:ts-jest && npm run test:swc",
+    "test:babel": "jest --config jest.babel.config.js",
+    "test:ts-jest": "jest --config jest.ts-jest.config.js",
+    "test:swc": "jest --config jest.swc.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "7.27.1",
+    "@babel/preset-env": "7.27.2",
+    "@babel/preset-react": "7.27.1",
+    "@babel/preset-typescript": "7.27.1",
+    "@swc/core": "1.11.24",
+    "@swc/jest": "0.2.38",
+    "@types/jest": "29.5.14",
+    "babel-jest": "29.7.0",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "ts-jest": "29.3.2",
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.3.0",
+    "@testing-library/user-event": "14.6.1",
+    "@types/react": "19.1.4",
+    "@types/react-dom": "19.1.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  }
+}
